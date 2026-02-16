@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PromptMaster by Sajol</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>PromptMaster by Sajol</h1>
+
+<div class="controls">
+
+<select id="fileType">
+<option value="Vector">Vector (SVG)</option>
+<option value="JPG">JPG</option>
+<option value="PNG">PNG</option>
+</select>
+
+<select id="style">
+<option value="Minimal">Minimal</option>
+<option value="Flat">Flat</option>
+<option value="Realistic">Realistic</option>
+</select>
+
+<select id="provider">
+<option value="OpenAI">OpenAI</option>
+<option value="Gemini">Gemini</option>
+<option value="Anthropic">Anthropic</option>
+</select>
+
+<div id="dropZone">Drag & Drop Images Here</div>
+
+<button onclick="generate()">Bulk Generate</button>
+<button onclick="exportTxt()">Export TXT</button>
+<button onclick="exportCsv()">Export CSV</button>
+
+</div>
+
+<textarea id="output"></textarea>
+
+<script src="renderer.js"></script>
+</body>
+</html>
